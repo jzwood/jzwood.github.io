@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+ACKNOWLEDGEMENT:
+	End scene image from http://paulbourke.net/geometry/transformationprojection/
+	converted using Blender tools & instruction from https://aerotwist.com/tutorials/create-your-own-environment-maps/
+-->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="manifest" href="/manifest.json">
+	<title>Lost and Alone</title>
+	<style>
+	body { margin: 0; background: black; }
+	canvas { width: 100%; height: 100%; }
+	/*iframe { display: none; }*/
+	</style>
+</head>
+<body>
+	<script>
+	/*
+	 * Debug parameters.
+	 */
+	WebVRConfig = {
+	  /**
+	   * webvr-polyfill configuration
+	   */
+
+	  // Forces availability of VR mode.
+	  //FORCE_ENABLE_VR: true, // Default: false.
+	  // Complementary filter coefficient. 0 for accelerometer, 1 for gyro.
+	  //K_FILTER: 0.98, // Default: 0.98.
+	  // How far into the future to predict during fast motion.
+	  //PREDICTION_TIME_S: 0.040, // Default: 0.040 (in seconds).
+	  // Flag to disable touch panner. In case you have your own touch controls
+	  //TOUCH_PANNER_DISABLED: true, // Default: false.
+	  // Enable yaw panning only, disabling roll and pitch. This can be useful for
+	  // panoramas with nothing interesting above or below.
+	  //YAW_ONLY: true, // Default: false.
+
+	  /**
+	   * webvr-boilerplate configuration
+	   */
+	  // Forces distortion in VR mode.
+	  //FORCE_DISTORTION: true, // Default: false.
+	  // Override the distortion background color.
+	  // DISTORTION_BGCOLOR: {x: 1, y: 0, z: 0, w: 1}, // Default: (0,0,0,1).
+	  // Prevent distortion from happening.
+	  //PREVENT_DISTORTION: true, // Default: false.
+	  // Show eye centers for debugging.
+	  // SHOW_EYE_CENTERS: true, // Default: false.
+	  // Prevent the online DPDB from being fetched.
+	  // NO_DPDB_FETCH: true,  // Default: false.
+	};
+	</script>
+	<!-- A polyfill for Promises. Needed for IE and Edge.  -->
+	<script src="node_modules/es6-promise/dist/es6-promise.js"></script>
+	<!-- three.js 3d library -->
+	<script src="node_modules/three/three.min.js"></script>
+	<!-- VRControls.js acquires positional information from connected VR devices and applies the transformations to a three.js camera object. -->
+	<script src="node_modules/three/examples/js/controls/VRControls.js"></script>
+	<!-- VREffect.js handles stereo camera setup and rendering. -->
+	<!-- <script src="node_modules/three/examples/js/effects/VREffect.js"></script> -->
+	<script src="node_modules/three/examples/js/effects/StereoEffect.js"></script>
+	<!-- A polyfill for WebVR using the Device{Motion,Orientation}Event API. -->
+	<script src="node_modules/webvr-polyfill/build/webvr-polyfill.js"></script>
+	<!-- Helps enter and exit VR mode, provides best practices while in VR.  -->
+	<script src="build/webvr-manager.js"></script>
+
+	<!-- <script src="alone_assets/libs/FirstPersonView.js"></script>
+	<script src="alone_assets/libs/DeviceOrientationControls.js"></script>
+	<script src="alone_assets/libs/StereoEffect.js"></script> -->
+	<script src="alone_assets/app/floorplan.js"></script>
+	<script src="alone_assets/app/floorplanRender.js"></script>
+	<script src="alone_assets/app/player.js"></script>
+	<script src="alone_assets/app/endGameScene.js"></script>
+	<script src="alone_assets/app/app.js"></script>
+	<!-- <iframe width="0" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/49501141&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe></body> -->
+</html>
