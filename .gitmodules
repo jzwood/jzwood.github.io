@@ -10,3 +10,6 @@
 [submodule "Word-Game-Companion"]
 	path = Word-Game-Companion
 	url = https://github.com/jzwood/Word-Game-Companion.git
+[submodule "Interactive-Thesaurus"]
+	path = Interactive-Thesaurus
+	url = https://github.com/jzwood/Interactive-Thesaurus.git
