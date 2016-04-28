@@ -7,3 +7,6 @@
 [submodule "Waterfall-Color-Gradient"]
 	path = Waterfall-Color-Gradient
 	url = https://github.com/jzwood/Waterfall-Color-Gradient.git
+[submodule "Word-Game-Companion"]
+	path = Word-Game-Companion
+	url = https://github.com/jzwood/Word-Game-Companion.git
