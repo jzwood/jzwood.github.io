@@ -13,3 +13,6 @@
 [submodule "Interactive-Thesaurus"]
 	path = Interactive-Thesaurus
 	url = https://github.com/jzwood/Interactive-Thesaurus.git
+[submodule "FPP"]
+	path = FPP
+	url = https://github.com/jzwood/FPP.git
