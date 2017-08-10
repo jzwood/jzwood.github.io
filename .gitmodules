@@ -1,9 +1,6 @@
 [submodule "Tunnel-VR"]
 	path = Tunnel-VR
 	url = https://github.com/jzwood/Tunnel-VR.git
-[submodule "Amoeba-Edit"]
-	path = Amoeba-Edit
-	url = https://github.com/jzwood/Amoeba-Edit.git
 [submodule "Waterfall-Color-Gradient"]
 	path = Waterfall-Color-Gradient
 	url = https://github.com/jzwood/Waterfall-Color-Gradient.git
