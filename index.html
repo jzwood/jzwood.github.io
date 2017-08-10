@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!-- <meta http-equiv="refresh" content="3; URL='http://jzwood.neocities.org/'" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jake's Landing Page</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jake Wood</title>
+		<link href="homepage/style.css" rel="stylesheet" type="text/css">
+		<link href="homepage/button.css" rel="stylesheet" type="text/css">
+	</head>
 
-<body style="background-color:white;color:black">
-  <h2 style="margin:20px;">
-    Prove that for all integers <i>n</i> such that <i>n &ge; 6</i>, there exists positive integers <i>a</i> and
-    <i>b</i> such that <i>3a + 4b = n</i>.
-
-  </h2>
-  <!-- <p>
-    <b>base case</b>: <i>a = 2, b = 0, n = 6</i><br> for any number <i>n</i> written in the form <i>3a + 4b = n</i> <table> <tr> <td> <i>n+1 = </i> </td> <td style="font-size:25px;"> { </td> <td> <table> <tr> <td> 3(a-1) + 4(b+1) </td> </tr> <tr> <td> 3(a+3) + 4(b-2) </td> </tr> </table> </td> <td> <table> <tr> <td> if a &ge; 1 </td> </tr> <tr> <td> else </td> </tr> </table> </td> </tr> </table>
-  </p> -->
-
-</body>
+	<body class="wrapper">
+		<div id="sketch-container" class="sketch-container pointable"></div>
+		<div class="rick-container hide">
+			<img class="rick" src="homepage/rick.gif" alt="You have been Rick Rolled">
+		</div>
+		<button class="reset hide">Reset</button>
+		<!--P5.JS LIBS-->
+		<script type="text/javascript" src="homepage/p5.min.js"></script>
+		<script type="text/javascript" src="homepage/sketch.js"></script>
+	</body>
 
 </html>
